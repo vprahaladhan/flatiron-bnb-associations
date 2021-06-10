@@ -52,6 +52,7 @@ describe User do
       end
 
       it 'has many trips' do
+        puts "Reservation > #{reservation.guest.trips}"
         expect(logan.trips).to include(reservation)
       end
 
